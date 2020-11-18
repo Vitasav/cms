@@ -128,4 +128,5 @@ button:hover {
     width: 250px;
     left: 70px;
     top: 30px;
+    cursor: pointer;
 }

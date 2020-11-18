@@ -1,6 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+:root {
+    --bg-color: #FFFFFF;
+    --color-2: #ffffff;
+    --color-3: #407F6A;
+    --color-4: #5FA0D9;
+    --color-5: #85A050;
+
+    --primary-font: 'Roboto Slab', serif;
+    ;
+    --secondary-font: 'Roboto Slab', serif;
+    --main-text-color: #000;
+
+    --white-space: 1rem;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    margin: 20px;
+}
+
 nav {
     position: relative;
-    top: 20px;
+    top: 30px;
     left: 60%;
     transform: translateX(-50%);
     display: inline-block;
@@ -38,10 +64,9 @@ a {
 }
 
 a:hover {
-    background: #EDE937;
-    border: 2px solid #EDE937;
-    border-right: 2px solid #EDE937;
-    border-bottom: 2px solid #EDE937;
+   transform: scale(1.1);
+    color:var(--color-3);
+     font-size: 20px;
 }
 
 a {
@@ -69,4 +94,31 @@ a {
 p {
     width: 50%;
 
+}
+
+
+button {
+    border-radius: 30px;
+    background-color: var(--color-3);
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    border: var(--color-2) solid 4px;
+    font-family: var(--primary-font);
+    z-index: 20;
+    cursor: pointer;
+    color: white;
+
+}
+
+button:hover {
+    color: darkslategrey;
+    background-color: #FF9632;
+
+}
+#sign {
+    position: absolute;
+    left: 1250px;
+    top: 30px;
 }

@@ -20,3 +20,4 @@ function showPost(post){
 
     document.querySelector("main").appendChild(copy);
 }
+

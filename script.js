@@ -1,4 +1,4 @@
-fetch("http://vitasavicka.com/t9/wp-json/wp/v2/posts")
+fetch("http://vitasavicka.com/t9/wp-json/wp/v2/posts?per_page=14")
     .then(res =>res.json())
     .then(handleData)
 

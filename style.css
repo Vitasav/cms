@@ -1,4 +1,137 @@
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+
+:root {
+    --bg-color: #FFFFFF;
+    --color-2: #ffffff;
+    --color-3: #407F6A;
+    --color-4: #5FA0D9;
+    --color-5: #85A050;
+
+    --primary-font: 'Roboto Slab', serif;
+    ;
+    --secondary-font: 'Roboto Slab', serif;
+    --main-text-color: #000;
+
+    --white-space: 1rem;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+nav {
+    position: relative;
+    top: 30px;
+    left: 60%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 2px solid #EBECF1;
+    border-radius: 30px;
+    animation: slide-in 1s ease-out;
+    font-family: var(--primary-font);
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0 30px;
+    list-style-type: none;
+}
+
+li:not(:last-child) {
+    margin-right: 40px;
+}
+
+li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background 0.2s;
+}
+
+a {
+    color: #004155;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+a:hover {
+   transform: scale(1.1);
+    color:var(--color-3);
+     font-size: 20px;
+}
+
+a {
+    color: #004155;
+}
+
+@keyframes slide-in {
+    0% {
+        top: -50px;
+    }
+
+    40% {
+        top: 20px;
+    }
+
+    70% {
+        top: 10px;
+    }
+
+    100% {
+        top: 15px;
+    }
+}
+
+p {
+    width: 50%;
+
+}
+
+
+button {
+    border-radius: 30px;
+    background-color: var(--color-3);
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    border: var(--color-2) solid 4px;
+    font-family: var(--primary-font);
+    z-index: 20;
+    cursor: pointer;
+    color: white;
+
+}
+
+button:hover {
+    color: darkslategrey;
+    background-color: #FF9632;
+
+}
+#sign {
+    position: absolute;
+    left: 1250px;
+    top: 30px;
+}
+
+#logo {
+    position: absolute;
+    width: 250px;
+    left: 70px;
+    top: 30px;
+    cursor: pointer;
 }

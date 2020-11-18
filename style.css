@@ -122,3 +122,10 @@ button:hover {
     left: 1250px;
     top: 30px;
 }
+
+#logo {
+    position: absolute;
+    width: 250px;
+    left: 70px;
+    top: 30px;
+}
